@@ -6,6 +6,7 @@ import (
 	"os"
 
 	// 현재 모듈 matchers, search 가져옴.
+	_ "github.com/gurumee92/go-in-action/ch02/matchers"
 	"github.com/gurumee92/go-in-action/ch02/search"
 )
 
@@ -14,5 +15,5 @@ func init() {
 }
 
 func main() {
-	search.Run("Sherlock Homes")
+	search.Run("corona")
 }

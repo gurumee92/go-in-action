@@ -24,7 +24,7 @@ func Run(searchTerm string) {
 		if !exists {
 			matcher = matchers["default"]
 		}
-
+		// Go의 익명 함수.
 		go func(matcher Matcher, feed *Feed) {
 			Match(matcher, feed, searchTerm, results)
 			waitGroup.Done()
