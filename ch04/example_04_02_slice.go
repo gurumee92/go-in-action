@@ -45,4 +45,13 @@ func main() {
 	}
 	fmt.Println(d)
 
+	fmt.Println("\n슬라이스는 배열과 달리 참조로 취급받습니다.")
+	fmt.Println("함수로 전달 받으면, 주소가 전달됩니다.")
+	fmt.Println("호출 전: ", c3)
+	SetElem(c3)
+	fmt.Println("호출 후: ", c3)
+}
+
+func SetElem(s []string) {
+	s[2] = "함수 호출 후 변경됨."
 }
