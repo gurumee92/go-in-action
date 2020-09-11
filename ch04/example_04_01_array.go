@@ -13,7 +13,12 @@ func main() {
 	fmt.Println("a[1] 변경 후", a)
 	fmt.Println("a[1] 변경 후", a[1])
 
-	fmt.Println("\n배열 순회는 다음과 같이 이쁘게^^ 할 수 있습니다.")
+	fmt.Println("\n배열 순회는 다음과 같이 할 수 있습니다.")
+	for i := 0; i < len(a); i++ {
+		fmt.Println(a[i])
+	}
+
+	fmt.Println("\n배열 순회는 다음과 같이 이쁘게^^ 할 수 있습니다. idx는 _로 생략 가능합니다.")
 	for idx, num := range a {
 		fmt.Println(idx, num)
 	}
