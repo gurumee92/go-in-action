@@ -5,11 +5,10 @@ import (
 	"testing"
 )
 
-const checkMark = "\u2713"
-const ballotX = "\u2717"
-
 func TestDownload(t *testing.T) {
 	// given
+	const checkMark = "\u2713"
+	const ballotX = "\u2717"
 	params := []struct {
 		url        string
 		statusCode int
