@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gurumee92/go-in-action/ch07/work"
+	"github.com/gurumee92/golang-studies/go-in-action/ch07/work"
 )
 
 var names = []string{

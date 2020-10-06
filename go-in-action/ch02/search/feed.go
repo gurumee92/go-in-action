@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-const dataFile = "ch02/data/data.json"
+const dataFile = "go-in-action/ch02/data/data.json"
 
 // Feed is model of feed
 type Feed struct {

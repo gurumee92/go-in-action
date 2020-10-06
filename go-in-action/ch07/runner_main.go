@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/gurumee92/go-in-action/ch07/runner"
+	"github.com/gurumee92/golang-studies/go-in-action/ch07/runner"
 )
 
 const timeout = 3 * time.Second

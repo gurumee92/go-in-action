@@ -1,3 +1,3 @@
-module github.com/gurumee92/go-in-action
+module github.com/gurumee92/golang-studies
 
 go 1.14
