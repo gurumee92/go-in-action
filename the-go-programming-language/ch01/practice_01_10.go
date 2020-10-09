@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"time"
@@ -27,10 +28,18 @@ func fetch(url string, ch chan<- string) {
 	}
 
 	secs := time.Since(start).Seconds()
-	ch <- fmt.Sprintf("%.2ffs %7d %s", secs, nbytes, url)
+	ch <- fmt.Sprintf("%.2fs %7d %s", secs, nbytes, url)
 }
 
 func main() {
+	f, err := os.Create("practice_10.txt")
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	defer f.Close()
+
 	start := time.Now()
 	ch := make(chan string)
 
@@ -39,8 +48,8 @@ func main() {
 	}
 
 	for range os.Args[1:] {
-		fmt.Println(<-ch)
+		fmt.Fprintln(f, <-ch)
 	}
 
-	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
+	fmt.Fprintf(f, "%.2fs elapsed\n", time.Since(start).Seconds())
 }
