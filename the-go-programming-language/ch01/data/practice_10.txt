@@ -1,0 +1,3 @@
+0.18s  227575 https://www.naver.com
+0.20s  225681 https://www.naver.com
+0.20s elapsed
