@@ -6,8 +6,8 @@ import (
 	"os"
 
 	// 현재 모듈 matchers, search 가져옴.
-	_ "github.com/gurumee92/go-in-action/ch02/matchers"
-	"github.com/gurumee92/go-in-action/ch02/search"
+	_ "github.com/gurumee92/golang-studies/go-in-action/ch02/matchers"
+	"github.com/gurumee92/golang-studies/go-in-action/ch02/search"
 )
 
 func init() {

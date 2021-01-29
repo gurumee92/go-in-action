@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gurumee92/go-in-action/ch07/pool"
+	"github.com/gurumee92/golang-studies/go-in-action/ch07/pool"
 )
 
 const (
